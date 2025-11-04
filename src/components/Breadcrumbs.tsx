@@ -13,7 +13,7 @@ export const Breadcrumbs = memo(function Breadcrumbs() {
 
   if (pathSegments.length === 0) return null
 
-  const getBreadcrumbLabel = (segment: string, index: number): string => {
+  const getBreadcrumbLabel = (segment: string): string => {
     if (segment === 'products') return 'Products'
     if (segment === 'create-product') return 'Create Product'
 
@@ -39,7 +39,7 @@ export const Breadcrumbs = memo(function Breadcrumbs() {
       {pathSegments.map((segment, index) => {
         const path = `/${pathSegments.slice(0, index + 1).join('/')}`
         const isLast = index === pathSegments.length - 1
-        const label = getBreadcrumbLabel(segment, index)
+        const label = getBreadcrumbLabel(segment)
 
         return (
           <div key={path} className="flex items-center gap-2">

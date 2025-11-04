@@ -1,5 +1,5 @@
 import { useEffect, useState, useCallback, memo } from 'react'
-import { useParams, useNavigate } from 'react-router-dom'
+import { useParams, useNavigate, Link } from 'react-router-dom'
 import { ArrowLeft, Heart, Trash2, Edit } from 'lucide-react'
 import { useProductStore } from '@/store/productStore'
 import { productsApi } from '@/api/products'

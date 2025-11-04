@@ -16,7 +16,6 @@ export function ProductsPage() {
   const showOnlyLiked = useProductStore((state) => state.showOnlyLiked)
   const selectedCategory = useProductStore((state) => state.selectedCategory)
   const searchQuery = useProductStore((state) => state.searchQuery)
-  const setCurrentPage = useProductStore((state) => state.setCurrentPage)
   const setShowOnlyLiked = useProductStore((state) => state.setShowOnlyLiked)
   const filterByCategory = useProductStore((state) => state.filterByCategory)
   const setSearchQuery = useProductStore((state) => state.setSearchQuery)

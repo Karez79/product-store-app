@@ -14,7 +14,6 @@ export function ProductFilter() {
   const setShowOnlyLiked = useProductStore((state) => state.setShowOnlyLiked)
   const selectedCategory = useProductStore((state) => state.selectedCategory)
   const filterByCategory = useProductStore((state) => state.filterByCategory)
-  const loading = useProductStore((state) => state.loading)
   const [categories, setCategories] = useState<Category[]>([])
 
   useEffect(() => {
