@@ -13,7 +13,7 @@ export function Footer() {
 
           <div className="flex items-center gap-4 text-sm">
             <a
-              href="https://github.com"
+              href="https://github.com/Karez79/product-store-app"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1 text-muted-foreground hover:text-foreground transition-colors"
